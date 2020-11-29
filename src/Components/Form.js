@@ -62,7 +62,6 @@ class Form extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
-
         let { values, errors } = this.state;
         let valid = true;
         let profileContent = "";

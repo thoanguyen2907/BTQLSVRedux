@@ -1,4 +1,4 @@
-import {add_user, delete_user, check_task, edit_user, update_user} from '../types/UserListTypes'; 
+import {add_user, delete_user, check_task, edit_user, update_user, sort_stt} from '../types/UserListTypes'; 
 export const addUserAction = (newUser) => ({
     type: add_user,
     newUser
@@ -19,6 +19,11 @@ export const editUserAction = (userEdit) => ({
 export const updateUserAction = (userEdit) => ({
     type: update_user,
     userEdit
+})
+export const sortSTTAction = (sort, column) => ({
+    type: sort_stt, 
+    sort, 
+    column
 })
 
 

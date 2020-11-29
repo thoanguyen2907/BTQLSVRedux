@@ -9,9 +9,6 @@ class BaiTapQuanLyUser extends Component {
                 <Form />
                 <DanhSach />
             </div>
-
-
-
         );
     }
 }
