@@ -28,7 +28,7 @@ export default (state = initialState, action) => {
     let updateUsers;
     let index = -1;
     switch (action.type) {
-        case "add_user":
+        case types.add_user :
             let { newUser } = action;
             updateUsers = [...state.users];
             index = updateUsers.findIndex((user => user.account === newUser.account));
@@ -44,7 +44,7 @@ export default (state = initialState, action) => {
             }
             state.users = updateUsers;
             return { ...state }
-        case "delete_user":
+        case types.delete_user:
             updateUsers = [...state.users];
             index = updateUsers.findIndex((user => user.id === action.userID));
             if(index !== -1){
@@ -57,9 +57,9 @@ export default (state = initialState, action) => {
             }
             state.users = updateUsers;
             return { ...state }
-        case "edit_user":
+        case types.edit_user:
             return { ...state, userEdit: action.userEdit };
-        case "update_user":
+        case types.update_user:
             state.userEdit = { ...state.userEdit, userEdit: action.userEdit };
             updateUsers = [...state.users];
             index = updateUsers.findIndex(user => user.id === state.userEdit.id);
@@ -68,7 +68,7 @@ export default (state = initialState, action) => {
             }
             state.users = updateUsers;
             return { ...state }; 
-        case "sort_stt": 
+        case types.sort_stt: 
         let {sort, column} = action; 
         sort = sort === "desc"? "asc": "desc"; 
         state.sort = sort; ; 
