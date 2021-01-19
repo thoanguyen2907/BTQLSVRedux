@@ -12,6 +12,12 @@ Here is illustration:
 ![github](https://media.giphy.com/media/ve8jyfwHAOPtb0Txtr/giphy.gif)
 
 
+Live Demo : 
+
+
+https://studentmanagerredux.herokuapp.com/?fbclid=IwAR0Bt2ZpugQU8KKv7hA0dBrrweiObLhHmGkI0sqCuV98hBK9NBMgzFNb8P4 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
