@@ -1,3 +1,17 @@
+
+Customer Management Project using React + Redux
+
+
+Features: 
+
+Add Item || Delete Item  ||   Update Item   ||    sort Items 
+
+Here is illustration: 
+
+
+![github](https://media.giphy.com/media/ve8jyfwHAOPtb0Txtr/giphy.gif)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
